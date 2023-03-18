@@ -40,6 +40,23 @@ ____________
 ### Redis (Server)
 
 The service can be accessed using local machine app at `localhost:6379` by default configuration.
+You can play with Redis-CLI with this service by:
+
+```
+docker-compose exec redis redis-cli
+```
+
+The redis-cli console will be opened and you can try commands like:
+
+```
+> AUTH secret_redis
+```
+
+```
+> PING
+```
+
+Type and enter `exit` to exit the console.
 
 ____________
 ### PHPRedisAdmin (Web)
