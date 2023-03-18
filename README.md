@@ -39,8 +39,8 @@ ____________
 
 ### Redis (Server)
 
-The service can be accessed using local machine app at `localhost:6379` by default configuration.
-You can play with Redis-CLI with this service by:
+The service can be accessed using local machine apps and redis desktop clients/GUI at `localhost:6379` by default configuration.
+You can play with Redis-CLI with this service by executing:
 
 ```
 docker-compose exec redis redis-cli
@@ -49,7 +49,7 @@ docker-compose exec redis redis-cli
 The redis-cli console will be opened and you can try commands like:
 
 ```
-> AUTH secret_redis
+> AUTH your_redis_server_password
 ```
 
 ```
@@ -63,6 +63,11 @@ ____________
 
 The service can be accessed using your browser at [http://localhost:9987](http://localhost:9987) by default configuration.
 
+____________
+
+### Redis Commander (Web)
+
+The service can be accessed using your browser at [http://localhost:8081](http://localhost:8081) by default configuration.
 ____________
 ### Python Redis (Console)
 
@@ -86,4 +91,4 @@ ____________
 
 ## License
 
-[MIT license](https://opensource.org/licenses/MIT).
+[MIT license](https://opensource.org/licenses/MIT)

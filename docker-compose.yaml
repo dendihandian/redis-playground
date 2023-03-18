@@ -46,3 +46,17 @@ services:
         - ./docker/python-redis/src:/root/src
     depends_on:
       - redis
+
+  redis-commander:
+    build:
+      context: ./docker/redis-commander
+      dockerfile: ./Dockerfile
+    container_name: ${REDCOM_CONTAINER_NAME}
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+    ports:
+      - ${REDCOM_PORT}:8081
+    depends_on:
+      - redis
