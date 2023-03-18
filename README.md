@@ -9,9 +9,15 @@ ___________
 
 ## Setup
 
-1. Duplicate `.env.example` into `.env` in the same directory. You may want to change the values if needed or leave it.
+1. Clone or download this project repository (obviously).
 
-2. Run one of these commands:
+```
+git clone https://github.com/dendihandian/redis-playground.git
+```
+
+2. Duplicate `.env.example` into `.env` in the same directory. You may want to change the values if needed or leave it.
+
+3. Run one of these commands:
 
     - Redis only:
     ```
