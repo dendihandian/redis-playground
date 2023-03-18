@@ -5,6 +5,8 @@
 - Docker
 - Docker-Compose
 
+___________
+
 ## Setup
 
 1. Duplicate `.env.example` into `.env` in the same directory. You may want to change the values if needed or leave it.
@@ -30,3 +32,41 @@
     ```
     docker-compose up -d
     ```
+
+____________
+
+## Services
+
+### Redis (Server)
+
+The service can be accessed using local machine app at `localhost:6379` by default configuration.
+
+____________
+### PHPRedisAdmin (Web)
+
+The service can be accessed using your browser at [http://localhost:6379](http://localhost:9987) by default configuration.
+
+____________
+### Python Redis (Console)
+
+You can execute sample script in `docker/python-redis/src` or create one. Here is the example of how to execute existing script:
+
+connection test:
+```
+docker-compose exec python-redis python connection_test.py
+```
+
+redis sub:
+```
+docker-compose exec python-redis python sub.py
+```
+
+redis pub:
+```
+docker-compose exec python-redis python pub.py "first message"
+```
+____________
+
+## License
+
+[MIT license](https://opensource.org/licenses/MIT).
