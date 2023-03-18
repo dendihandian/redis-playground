@@ -18,9 +18,14 @@ ___________
     docker-compose up -d redis
     ```
 
-    - Playing with PHPRedisAdmin only:
+    - Playing with `PHPRedisAdmin` only:
     ```
     docker-compose up -d redis phpredisadmin
+    ```
+
+    - Playing with `RedisCommander` only:
+    ```
+    docker-compose up -d redis redis-commander
     ```
 
     - Playing with python redis scripts only:
