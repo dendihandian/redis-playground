@@ -1,3 +1,4 @@
 from redis_client import redis
 
-print('Connected' if redis.ping() else 'Not Connected')
+if __name__ == '__main__':
+    print('Connected' if redis.ping() else 'Not Connected')

@@ -44,12 +44,12 @@ The service can be accessed using local machine app at `localhost:6379` by defau
 ____________
 ### PHPRedisAdmin (Web)
 
-The service can be accessed using your browser at [http://localhost:6379](http://localhost:9987) by default configuration.
+The service can be accessed using your browser at [http://localhost:9987](http://localhost:9987) by default configuration.
 
 ____________
 ### Python Redis (Console)
 
-You can execute sample script in `docker/python-redis/src` or create one. Here is the example of how to execute existing script:
+You can execute sample scripts in `docker/python-redis/src` or create one. Here is the example of how to execute existing scripts:
 
 connection test:
 ```
