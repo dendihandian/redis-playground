@@ -9,7 +9,7 @@
 
 1. Duplicate `.env.example` into `.env` in the same directory. You may want to change the values if needed or leave it.
 
-2. Run of these commands:
+2. Run one of these commands:
 
     - Redis only:
     ```
